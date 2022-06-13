@@ -959,7 +959,7 @@ h1, h2, h3, h4, h5, h6 {
 .contacts__location {
   line-height: 177%;
   padding-left: 30px;
-  background: url("/img/social/01.png") 0 0 no-repeat;
+  background: url("../img/social/01.png") 0 0 no-repeat;
 }
 
 .contacts__location a {
@@ -969,7 +969,7 @@ h1, h2, h3, h4, h5, h6 {
 .contacts__tel {
   line-height: 177%;
   padding-left: 28px;
-  background: url("/img/social/02.png") 0 1.5px no-repeat;
+  background: url("../img/social/02.png") 0 1.5px no-repeat;
 }
 
 .contacts__tel a {
@@ -979,7 +979,7 @@ h1, h2, h3, h4, h5, h6 {
 .contacts__email {
   line-height: 167%;
   padding-left: 35px;
-  background: url("/img/social/03.png") 0 4.5px no-repeat;
+  background: url("../img/social/03.png") 0 4.5px no-repeat;
 }
 
 .contacts__email a {
