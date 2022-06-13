@@ -402,7 +402,7 @@ h1, h2, h3, h4, h5, h6 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   background-color: #f5f5f5;
-  margin: -10px -15px 0px -15px;
+  margin: -10px -15px 0px -10px;
   position: absolute;
   width: 100%;
   z-index: 2;
@@ -604,9 +604,24 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
+.buttons-item__button:hover {
+  color: #000;
+  background-color: #f5f5f5;
+  border: 2px solid #000;
+  padding: 10.48px 36.32px;
+  -webkit-transition: color 1s ease 0.1s, background-color 0.4s ease-in 0s;
+  transition: color 1s ease 0.1s, background-color 0.4s ease-in 0s;
+}
+
 .buttons-item__button_white {
   background-color: #fff;
   color: #000;
+}
+
+.buttons-item__button_white:hover {
+  background-color: #000;
+  color: #fff;
+  border: 2px solid #f5f5f5;
 }
 
 .buttons-item__link {
@@ -959,11 +974,15 @@ h1, h2, h3, h4, h5, h6 {
 .contacts__location {
   line-height: 177%;
   padding-left: 30px;
-  background: url("../img/social/01.png") 0 0 no-repeat;
+  background: url("/img/social/01.png") 0 0 no-repeat;
 }
 
 .contacts__location a {
   color: inherit;
+}
+
+.contacts__location a:hover {
+  text-decoration: underline;
 }
 
 .contacts__tel {
@@ -976,6 +995,10 @@ h1, h2, h3, h4, h5, h6 {
   color: inherit;
 }
 
+.contacts__tel a:hover {
+  text-decoration: underline;
+}
+
 .contacts__email {
   line-height: 167%;
   padding-left: 35px;
@@ -986,8 +1009,23 @@ h1, h2, h3, h4, h5, h6 {
   color: inherit;
 }
 
+.contacts__email a:hover {
+  text-decoration: underline;
+}
+
 .contacts__social :not(:last-child) {
   margin-right: 31px;
+}
+
+.contacts__social a:hover::before {
+  content: '';
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  border: 3px solid #000;
+  border-radius: 50%;
+  -webkit-transform: translate(-8%, -8%);
+          transform: translate(-8%, -8%);
 }
 
 @media (max-width: 630px) {
@@ -1124,6 +1162,14 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 
+.getintouch__button:hover {
+  color: #fff;
+  background-color: #000;
+  border: 2px solid #90fad7;
+  -webkit-transition: color 1s ease 0.1s, background-color 0.4s ease-in 0s;
+  transition: color 1s ease 0.1s, background-color 0.4s ease-in 0s;
+}
+
 @media (max-width: 769px) {
   .getintouch__block-form {
     padding: 30px 15px 30px 15px;
@@ -1177,6 +1223,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer__text span {
   text-decoration: underline;
+}
+
+.footer__text span a {
+  color: inherit;
 }
 
 .footer__logo {
