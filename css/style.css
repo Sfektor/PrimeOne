@@ -974,7 +974,7 @@ h1, h2, h3, h4, h5, h6 {
 .contacts__location {
   line-height: 177%;
   padding-left: 30px;
-  background: url("/img/social/01.png") 0 0 no-repeat;
+  background: url("../img/social/01.png") 0 0 no-repeat;
 }
 
 .contacts__location a {
